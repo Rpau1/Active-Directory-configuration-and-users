@@ -20,7 +20,9 @@ Visual description:
 - <b>PowerShell: Used to automate the creation of 1k+ user accounts based on randomly generated names.</b> 
 
 <h2>Program walk-through:</h2>
+
 1) Downloaded VMware;got the extension pack too including the windows
+![vmware download](https://github.com/Rpau1/Active-Directory-configuration-and-users/assets/147562929/fc0a2fb9-8767-4a87-bb24-3c011a60594b)
 
 
 <h2> Resources Used </h2>
