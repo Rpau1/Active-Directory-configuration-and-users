@@ -17,7 +17,7 @@ Visual description:
 
 <h2>Languages Used</h2>
 
-- <b>PowerShell: Extract RDP failed logon logs from Windows Event Viewer</b> 
+- <b>PowerShell: Used to automate the creation of 1k+ user accounts based on randomly generated names.</b> 
 
 
 <h2>Utilities Used </h2>
