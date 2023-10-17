@@ -1,4 +1,4 @@
-# Active-Directory-configuration-and-users
+# Active-Directory-configuration-and-creating-bulk-users
 
 creating a mini corporate network.
 
