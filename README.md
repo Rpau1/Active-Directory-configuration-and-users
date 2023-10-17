@@ -8,7 +8,8 @@ creating a mini corporate network.
 creating two virtual machines with VMware.The first one is the windows 2019 domain controller server(DC). Second one is a client VM+ running windows 10 pro. Set up two NIC one internal and one connected to home router. create  Domain, RAS/NAT, DHCP. using a powershell script to auto-create 1k+ user accounts. Making sure the client computer and all authenticated users are properly set up. creating and assigning group policy objective to select user accounts in the domain
 
 Visual description:
-![sentinel final map](https://github.com/Rpau1/Azure-Sentinel-SIEM-/assets/147562929/69fcb4a5-9bd1-44b2-bd66-8e357b090860)
+![visual](https://github.com/Rpau1/Active-Directory-configuration-and-users/assets/147562929/b67919b3-33a1-4817-a3a9-333e546b3757)
+
 
 
 <br />
