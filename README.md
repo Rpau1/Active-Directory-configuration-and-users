@@ -19,6 +19,8 @@ Visual description:
 
 - <b>PowerShell: Used to automate the creation of 1k+ user accounts based on randomly generated names.</b> 
 
+<h2>Program walk-through:</h2>
+1) Downloaded VMware;got the extension pack too including the windows
 
 
 <h2> Resources Used </h2>
