@@ -20,11 +20,8 @@ Visual description:
 - <b>PowerShell: Used to automate the creation of 1k+ user accounts based on randomly generated names.</b> 
 
 
-<h2>Utilities Used </h2>
-
-- <b>ipgeolocation.io: IP Address to Geolocation API</b>
 
 <h2> Resources Used </h2>
-<b>[YouTube: SIEM Tutorial] (https://youtu.be/RoZeVbbZ0o0?si=YNdqQ7tfGzRDojno)</b>
+<b>[YouTube: Active directory Lab Tutorial] (https://youtu.be/MHsI8hJmggI?si=9e6oHqkikdU-4uT0)</b>
 
-<b>*usig the sentinel map querry script you can bypass the manual extraction proccess.</b> 
+<b>*creation and assigning GPO not included.</b> 
