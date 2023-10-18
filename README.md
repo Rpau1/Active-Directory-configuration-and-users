@@ -5,12 +5,12 @@ creating a mini corporate network.
 
 <h2>Description</h2>
 
--creating two virtual machines with VMware.
--The first one is the windows 2019 domain controller server(DC). Second one is a Client VM running windows 10 pro/enterprise.
--Set up two NIC one internal and one connected to home router(internet).
+- creating two virtual machines with VMware.
+- The first one is the windows 2019 domain controller server(DC). Second one is a Client VM running windows 10 pro/enterprise.
+- Set up two NIC one internal and one connected to home router(internet).
 - In domain controller(Win 2019 server) create and configure Domain, RAS/NAT, DHCP.
 - using a powershell script to auto-create 1k+ user accounts. 
--Making sure the client computer is configured and connected properly and  also, making sure authenticated users are properly set up to use it.
+- Making sure the client computer is configured and connected properly and  also, making sure authenticated users are properly set up to use it.
 
 Visual description:
 ![visual](https://github.com/Rpau1/Active-Directory-configuration-and-users/assets/147562929/b67919b3-33a1-4817-a3a9-333e546b3757)
