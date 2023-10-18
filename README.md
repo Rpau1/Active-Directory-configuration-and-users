@@ -37,7 +37,29 @@ Visual description:
     ![assigning ip to internal](https://github.com/Rpau1/Rpau1/assets/147562929/572f6179-caf7-4e88-bd1f-2b648a757c28)
 (see how the DNS server adress is a loop back adress that's so this server uses itself for DNS) 
 
-12) rename pc: right click on windows chose rename and name it DC>click next>it will reboot> log in. 
+12) rename pc: right click on windows chose rename and name it DC>click next>it will reboot> log in.
+13) installing Active directory domain services:go to server manager in the vm> click on add roles and features>click next till server roles> there click the box on "Active directory domain services"> keep clicking next than click install>click on the flag top right of server manager app>click on promote domain properties>than name the domain mydomain.com> and for deployment option select domain forest>click next> use Password1 for password>kepp preesing next till you go to install>click install. the computer will automaticaly restart let it restart than log in again as same admin user.
+     ![AD domain config](https://github.com/Rpau1/Rpau1/assets/147562929/026e8a47-0097-4830-8c98-8e1f8afa4be8)
+
+
+14) creating dedicated admin account instead of built in admin:click on windows>click "windows administritive tools"> click "active directory users and computers">right click on mydomain.com> click new> orgonizational unit> name it ADMINS> right click that folder and select new user> name it your full name > for user name get the first initial of your first name than your last name>click next>click finish>right click on the new user created> go to properties>than to member of>click add> type "domain admins">click check name> click ok>apply>ok.
+15) sign out of the vm and log in as the new administrator account(it will show mydomain under password whili logging in)
+16) installing RAS/NAT: go to server manager> add roles and features>click nest till you get to server roles>check Remote access>click next> check routing>keep clicking next till you get to install> click install. now go on tools top right hand of server manager>go to routing and remote access> right click on DC control>click on configure and enable> click next> click NAT> click next> it will give a option to chose between internet and internal> chose internet> click next>click finish> now its configured and DCcontrol will have a green dot next to it.
+17) setting up DHCP servers: go too add roles and features>go to server roles>check on DHCP servers>keep clickin on next and than instal
+18) set up DHCP scope: go to tools>click DHCP>right click on ipv4> click new sope> name the scope after ip range so "172.16.0.100-200">fill up the information according to the picture below>click next> set lease IP to 8 days> click next>click "yes" for client configuration> enter the domain controlers ip adress172.16.0.1>click add> click next>next again> click finish> right click on the DHCP server and refresh.
+    ![setting scope for dhcp](https://github.com/Rpau1/Rpau1/assets/147562929/06b6a6fd-e1cc-4546-93ab-348b4cbe52bc)
+
+19)using powershell script to create bulk users:go to explorer in vm> come to this repisotory in github>Download AD_PS-master.zip. within that folder you will see the "create_users.ps1" powershell script and names.text has random names from name generator. the script will use those name while creating user accounts.>in names.txt add your own full name and save it> go to windows>right click on powershell and run as administrator>open the powershell script from the folder>click run,you will most likely see an execution policy error> so type in this command "Set-ExecutinPolicy unrestricted"> click yes to all in the pop up> go to the directory where you stored the script for me it's c:\users\r-paul\desktop\AD_PS-master.zip> now click run> click run on the pop up too> it will start creating users.
+
+
+
+
+    
+   
+
+    
+   
+
    
 
 
